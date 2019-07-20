@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="700.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MetadataImageFXMLController">
+    <stylesheets>
+        <URL value="@/css/metadataimagefxml.css" />
+    </stylesheets>
+    <children>
+        <Pane fx:id="pane" prefHeight="650.0" prefWidth="700.0">
+            <children>
+                <BorderPane layoutX="-6.0" layoutY="-4.0" prefHeight="650.0" prefWidth="700.0">
+                    <top>
+                        <VBox prefHeight="250.0" prefWidth="680.0" BorderPane.alignment="CENTER">
+                            <BorderPane.margin>
+                                <Insets left="20.0" right="20.0" top="20.0" />
+                            </BorderPane.margin>
+                            <children>
+                                <Button fx:id="srcOriImg" mnemonicParsing="false" onAction="#srcOriImgAction" prefHeight="30.0" prefWidth="150.0" text="Search Original Image">
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </VBox.margin>
+                                </Button>
+                                <TableView fx:id="tvOriImage" prefHeight="200.0" prefWidth="650.0">
+                                    <columns>
+                                        <TableColumn fx:id="created_dateOri" prefWidth="187.0" text="Created Date" />
+                                        <TableColumn fx:id="image_heightOri" prefWidth="158.0" text="Image Height" />
+                                        <TableColumn fx:id="image_widthOri" prefWidth="139.0" text="Image Width" />
+                                        <TableColumn fx:id="image_sizeOri" prefWidth="165.0" text="File Size" />
+                                    </columns>
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </VBox.margin>
+                                </TableView>
+                                <HBox prefHeight="35.0" prefWidth="680.0">
+                                    <children>
+                                        <Button fx:id="importOriImage" mnemonicParsing="false" onAction="#importOriImageAction" prefHeight="30.0" prefWidth="80.0" text="Import">
+                                            <HBox.margin>
+                                                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                            </HBox.margin>
+                                        </Button>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets />
+                                    </VBox.margin>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </top>
+               <center>
+                  <VBox prefHeight="250.0" prefWidth="680.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox prefHeight="280.0" prefWidth="680.0">
+                           <children>
+                              <Button fx:id="srcRevImg" mnemonicParsing="false" onAction="#srcRevImgAction" prefHeight="30.0" prefWidth="150.0" text="Search Recovery Image">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <TableView fx:id="tvRevImage" prefHeight="200.0" prefWidth="650.0">
+                                 <columns>
+                                    <TableColumn fx:id="created_dateRev" prefWidth="193.0" text="Created Date" />
+                                    <TableColumn fx:id="image_heightRev" prefWidth="153.0" text="Image Height" />
+                                    <TableColumn fx:id="image_widthRev" prefWidth="144.0" text="Image Width" />
+                                    <TableColumn fx:id="image_sizeRev" prefWidth="159.0" text="File Size" />
+                                 </columns>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </TableView>
+                              <HBox prefHeight="35.0" prefWidth="680.0">
+                                 <children>
+                                    <Button fx:id="importRevImage" mnemonicParsing="false" onAction="#importRevImageAction" prefHeight="30.0" prefWidth="80.0" text="Import">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets left="20.0" right="20.0" top="20.0" />
+                     </BorderPane.margin>
+                  </VBox>
+               </center>
+               <bottom>
+                  <HBox prefHeight="87.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="btnCompareMetadataImg" alignment="TOP_RIGHT" mnemonicParsing="false" onAction="#btnCompareMetadataImgAction" text="Compare Metadata" textAlignment="JUSTIFY" textFill="#161c25">
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="550.0" right="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </bottom>
+                </BorderPane>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

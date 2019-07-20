@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ImageChartFXML3FXMLController">
+    <stylesheets>
+        <URL value="@/css/imagechartfxml3fxml.css" />
+    </stylesheets>
+   <children>
+      <Pane fx:id="pane" prefHeight="657.0" prefWidth="707.0">
+         <children>
+            <LineChart fx:id="SimilarityChart" layoutX="100.0" layoutY="48.0" prefHeight="500.0" prefWidth="500.0" title="Similarity Image File">
+              <xAxis>
+                <CategoryAxis label="Image File" prefWidth="443.0" side="BOTTOM" fx:id="xAxis" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="yAxis" side="LEFT" />
+              </yAxis>
+            </LineChart>
+         </children></Pane>
+   </children>
+</AnchorPane>

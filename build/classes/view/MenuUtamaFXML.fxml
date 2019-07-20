@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="border_pane" prefHeight="650.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuUtamaFXMLController">
+   <left>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="415.0" prefWidth="145.0" style="-fx-alignment: up; -fx-background-color: #e0e4cc;" stylesheets="@../css/menuutamafxml.css">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="138.0" styleClass="back-transparent">
+                     <children>
+                        <Button graphicTextGap="2.0" mnemonicParsing="false" onMouseClicked="#show_MenuUtama" prefHeight="30.0" prefWidth="159.0" text="Beranda">
+                           <styleClass>
+                              <String fx:value="back-transparent" />
+                              <String fx:value="fill-light-grey" />
+                           </styleClass>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="HOME" size="20">
+                                 <rotationAxis>
+                                    <Point3D />
+                                 </rotationAxis>
+                              </FontAwesomeIconView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                           <rotationAxis>
+                              <Point3D />
+                           </rotationAxis>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" styleClass="back-transparent">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" styleClass="back-transparent">
+                     <children>
+                        <Button graphicTextGap="2.0" mnemonicParsing="false" onMouseClicked="#show_MetadataImage" prefHeight="30.0" prefWidth="149.0" text="Image">
+                           <styleClass>
+                              <String fx:value="back-transparent" />
+                              <String fx:value="fill-light-grey" />
+                           </styleClass>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="IMAGE" size="19">
+                                 <rotationAxis>
+                                    <Point3D />
+                                 </rotationAxis>
+                              </FontAwesomeIconView>
+                           </graphic>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                           <rotationAxis>
+                              <Point3D />
+                           </rotationAxis>
+                        </Button>
+                        <Button graphicTextGap="2.0" mnemonicParsing="false" onMouseClicked="#show_MetadataAudio" prefHeight="30.0" prefWidth="154.0" text="Audio">
+                           <styleClass>
+                              <String fx:value="back-transparent" />
+                              <String fx:value="fill-light-grey" />
+                           </styleClass>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="FILE_SOUND_ALT" size="20" />
+                           </graphic>
+                           <opaqueInsets>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                           <rotationAxis>
+                              <Point3D />
+                           </rotationAxis>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" styleClass="back-transparent">
+                     <children>
+                        <Button graphicTextGap="2.0" mnemonicParsing="false" onMouseClicked="#show_MetadataVideo" prefHeight="30.0" prefWidth="150.0" text="Video">
+                           <styleClass>
+                              <String fx:value="back-transparent" />
+                              <String fx:value="fn-14" />
+                           </styleClass>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="FILE_VIDEO_ALT" size="20">
+                                 <rotationAxis>
+                                    <Point3D />
+                                 </rotationAxis>
+                              </FontAwesomeIconView>
+                           </graphic>
+                           <opaqueInsets>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                           <rotationAxis>
+                              <Point3D />
+                           </rotationAxis>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                  </VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </left>
+   <center>
+      <VBox fx:id="root" prefHeight="600.0" prefWidth="555.0" BorderPane.alignment="CENTER">
+         <effect>
+            <Glow level="0.01" />
+         </effect>
+         <children>
+            <Label alignment="TOP_CENTER" prefHeight="86.0" prefWidth="555.0" style="-fx-alignment: center;" stylesheets="@../css/menuutamafxml.css" text="Uji Perbandingan Digital Forensic Tools">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+               </VBox.margin>
+            </Label>
+            <ImageView fx:id="logo" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style="-fx-alignment: center;">
+               <image>
+                  <Image url="@../../../../GAMBAR/ITDEL.jpg" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="80.0" left="250.0" right="250.0" top="30.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label prefHeight="79.0" prefWidth="584.0" style="-fx-alignment: center;" text="D3TI-07-18/19">
+               <padding>
+                  <Insets bottom="50.0" left="50.0" right="10.0" top="30.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="150.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <HBox prefHeight="50.0" prefWidth="700.0" style="-fx-alignment: center; -fx-background-color: #a7dbd8;" styleClass="back-light-grey" stylesheets="@../css/menuutamafxml.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Simulator Metadata Multimedia File">
+               <font>
+                  <Font name="Corbel Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </HBox>
+   </top>
+</BorderPane>

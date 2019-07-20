@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MetadataVideoFXMLController">
+    <stylesheets>
+        <URL value="@/css/metadatavideofxml.css" />
+    </stylesheets>
+    <children>
+        <Pane fx:id="pane" prefHeight="650.0" prefWidth="700.0">
+            <children>
+                <BorderPane fx:id="border_pane" layoutX="-2.0" layoutY="-6.0" prefHeight="650.0" prefWidth="700.0">
+                    <top>
+                        <VBox prefHeight="250.0" prefWidth="680.0" BorderPane.alignment="CENTER">
+                            <BorderPane.margin>
+                                <Insets left="20.0" right="20.0" top="20.0" />
+                            </BorderPane.margin>
+                            <children>
+                                <Button fx:id="srcOriVideo" mnemonicParsing="false" onAction="#srcOriVideoAction" prefHeight="30.0" prefWidth="150.0" text="Search Original Video">
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </VBox.margin>
+                                </Button>
+                                <TableView fx:id="tvOriVideo" prefHeight="179.0" prefWidth="616.0">
+                                    <columns>
+                                        <TableColumn fx:id="creation_dateIdOri" prefWidth="116.0" text="Creation Date" />
+                                        <TableColumn fx:id="modified_dateIdOri" minWidth="0.0" prefWidth="105.0" text="Modified Date" />
+                                        <TableColumn fx:id="durationIdOri" minWidth="0.0" prefWidth="92.0" text="Duration" />
+                              <TableColumn fx:id="sample_rateIdOri" minWidth="0.0" prefWidth="99.0" text="Sample Rate" />
+                              <TableColumn fx:id="image_lengthIdOri" minWidth="0.0" prefWidth="96.0" text="Image Length" />
+                              <TableColumn fx:id="image_widthIdOri" minWidth="0.0" prefWidth="141.0" text="Image Width" />
+                                    </columns>
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </VBox.margin>
+                                </TableView>
+                                <HBox prefHeight="35.0" prefWidth="680.0">
+                                    <children>
+                                        <Button fx:id="importOriVideo" mnemonicParsing="false" onAction="#importOriVideoAction" prefHeight="30.0" prefWidth="80.0" text="Import">
+                                            <HBox.margin>
+                                                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                            </HBox.margin>
+                                        </Button>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets />
+                                    </VBox.margin>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </top>
+               <center>
+                  <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox prefHeight="250.0" prefWidth="680.0">
+                           <children>
+                              <Button fx:id="srcRevVideo" mnemonicParsing="false" onAction="#srcRevVideoAction" prefHeight="30.0" prefWidth="150.0" text="Search Recovery Video">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <TableView fx:id="tvRevVideo" prefHeight="179.0" prefWidth="616.0">
+                                 <columns>
+                                    <TableColumn fx:id="creation_dateIdRev" prefWidth="107.0" text="Creation Date" />
+                                    <TableColumn fx:id="modified_dateIdRev" minWidth="0.0" prefWidth="114.0" text="Modified Date" />
+                                    <TableColumn fx:id="durationIdRev" minWidth="0.0" prefWidth="91.0" text="Duration" />
+                                    <TableColumn fx:id="sample_rateIdRev" minWidth="0.0" prefWidth="99.0" text="Sample Rate" />
+                                    <TableColumn fx:id="image_lengthIdRev" minWidth="0.0" prefWidth="105.0" text="Image Length" />
+                                    <TableColumn fx:id="image_widthIdRev" minWidth="0.0" prefWidth="143.0" text="Image Width" />
+                                 </columns>
+                              </TableView>
+                              <HBox prefHeight="35.0" prefWidth="680.0">
+                                 <children>
+                                    <Button fx:id="importRevVideo" mnemonicParsing="false" onAction="#importRevVideoAction" prefHeight="30.0" prefWidth="80.0" text="Import">
+                                       <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </center>
+               <bottom>
+                  <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="btnCompareMetadataVideo" mnemonicParsing="false" onAction="#btnCompareMetadataVideoAction" text="Compare Metadata">
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="550.0" right="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </bottom>
+                </BorderPane>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
